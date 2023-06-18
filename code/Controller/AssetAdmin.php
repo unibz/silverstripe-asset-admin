@@ -1193,6 +1193,7 @@ class AssetAdmin extends LeftAndMain implements PermissionProvider
             $object['height'] = $file->getHeight();
         } else {
             $object['thumbnail'] = $file->PreviewLink();
+            $object['smallThumbnail'] = $file->PreviewLink();
         }
 
         return $object;
